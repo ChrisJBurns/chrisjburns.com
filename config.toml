@@ -2,7 +2,7 @@ baseurl = "https://chrisjburns.com"
 
 # title = "chrisjburns"
 
-theme = "coder"
+# theme = "coder"
 
 languagecode = "en"
 defaultcontentlanguage = "en"
