@@ -8,21 +8,23 @@
         <div class="post-title">
           <h1 class="title">{{ .Title }}</h1>
         </div>
+        <div class="description">
+          <span class="title">{{ .Description }}</span>
+        </div>
         <div class="post-meta">
+          {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
           <div class="date">
             <span class="posted-on">
-              <i class="fas fa-calendar"></i>
               <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
                 {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
               </time>
             </span>
+          </br>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              {{ i18n "reading_time" .ReadingTime }}
+              {{ math.Round (div (countwords .Content) 220.0) }} minutes
             </span>
           </div>
-          {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
-          {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
         </div>
       </header>
 

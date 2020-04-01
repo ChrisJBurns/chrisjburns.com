@@ -9,10 +9,9 @@ body.rtl {
       }
       .tags,
       .categories {
-        i {
-          margin-left: 0.5rem;
-          margin-right: 0;
-        }
+        background-color: red($color: #000000);
+        text-align: center;
+        line-height: 4.4rem;
       }
     }
   }

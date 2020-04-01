@@ -12,12 +12,12 @@ html {
 body {
   color: $fg-color;
   background-color: $bg-color;
-	font-family: $text-font-family;
-	font-size: 1.6em;
+  font-family: $text-font-family;
+	font-size: 1.9em;
 	font-weight: 300;
   line-height: 1.8em;
   @media only screen and (max-width : 768px) {
-    font-size: 1.6em;
+    font-size: 1.9em;
     line-height: 1.6em;
   }
 }
