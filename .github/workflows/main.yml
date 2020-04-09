@@ -9,7 +9,7 @@ on:
     branches: [ master ]
 
 jobs:
-  Build and Deploy:
+  Build_and_Deploy:
     runs-on: ubuntu-18.04
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
